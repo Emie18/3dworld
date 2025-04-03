@@ -14,11 +14,14 @@ const {
 Ion.defaultAccessToken =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJhZDBmZWM2MC1lYjI2LTRlNzUtYTRmNS1mNTRhOTc3ZTJhZWIiLCJpZCI6MjkwMjk5LCJpYXQiOjE3NDM1OTI0MzV9.VwOvF3o3FJ6EdeVoEanAgCHJuxGEAaJXFVeA86kV6Fo";
 
+/** il y a aussi des modifications sur le css du widget des crédit et du bouton search géocoder **/
 const viewer = new Viewer("cesiumContainer", {
   terrain: Terrain.fromWorldTerrain(),
   timeline: false,
+  animation: false, // enleve la grosse horloge
   sceneModePicker: false,
   baseLayerPicker: false,
+  homeButton: false,
 });
 
 viewer.camera.flyTo({
@@ -43,6 +46,7 @@ viewer.entities.add({
   },
 });
 
+// Grande spere autour du point
 viewer.entities.add({
   position: Cesium.Cartesian3.fromDegrees(-4.614, 48.3329, 100),
   ellipsoid: {
@@ -53,5 +57,9 @@ viewer.entities.add({
     material: new Cesium.ColorMaterialProperty(
       Color.BLUE.withAlpha(0.2) // Couleur avec une transparence de 0.2
     ),
+    clampToGround: false,
+    heightReference: Cesium.HeightReference.NONE,
+    distanceDisplayCondition: new Cesium.DistanceDisplayCondition(0.0, 10000.0),
   },
 });
+viewer.scene.globe.depthTestAgainstTerrain = true;
