@@ -10,7 +10,7 @@ Avant de commencer, assurez-vous d'avoir Node.js installé sur votre machine.
 
 1. Clonez le dépôt ou téléchargez les fichiers source:
    ```bash
-   git clone <URL_du_repo>
+   git clone https://github.com/Emie18/3dworld.git
    ```
 2. Accédez au répertoire du projet:
    ```bash
