@@ -27,7 +27,10 @@ Pour démarrer l'application, utilisez le serveur HTTP fourni par le module `htt
 ```bash
 npm start
 ```
-
+Puis dans un navigateur ouvrir la page :
+```
+http://127.0.0.1:8080/essai.html
+```
 ## Structure du Projet
 
 - `index.html`: Fichier HTML principal contenant la structure de base de l'application.
