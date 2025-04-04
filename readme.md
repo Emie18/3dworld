@@ -49,7 +49,7 @@ L'application utilise `CesiumJS` pour afficher le terrain mondial avec les bâti
 
 ### Vue centrée sur les coordonnées spécifiques
 
-- Coordonnées définies pour centrer la vue autour du `petit minou` avec une orientation spécifique.
+- Coordonnées définies pour centrer la vue autour du `petit minou` avec une orientation spécifique ( au milieu de la sphère ).
 
 ### Ajout de primitives
 
@@ -61,4 +61,4 @@ L'application utilise `CesiumJS` pour afficher le terrain mondial avec les bâti
  Assurez-vous de revoir le CSS pour une personnalisation complète selon vos besoins.
 
 ## capture d'écran du résultat
-![alt text](image-1.png)
+![capture d'ecran de l'image](image-1.png)
